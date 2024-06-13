@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown timer using js</title>
+</head>
+<style>
+    *{
+        box-sizing: content-box;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: linear-gradient(270deg, rgb(65, 3, 84), rgb(67, 2, 67));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* justify-self: center; */
+        align-items: center; /* Vertical centering */
+        height: 100vh;
+        text-align: center;
+    }
+    #heading{
+        font-size: 70px;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    #js{
+        font-size: 20px;
+        margin:0px;
+        padding: 0px;
+        text-align: center;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .container{
+        margin-top: 20px;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        /* justify-self: center; */
+        align-items: center; /* Vertical centering */
+        padding: 20px 40px;
+        background: rgba(255, 255, 255, 0.649);
+        border-radius: 20px 0px 20px 0px;
+    }
+    .box{
+        background-color: rgb(2, 47, 47);
+        border-radius: 15px 0px 15px 0px;
+        border: none;
+        padding: 10px;
+        width: 60px;
+        height: 85px;
+        margin: 10px;
+    }
+    h1{
+        background-color: rgba(11, 154, 154, 0.699);
+        border-radius: 15px 0px 15px 0px;
+        border: none;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 38px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        font-size: 60px;
+    }
+    h4{
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 10px;
+        font-style: italic;
+    }
+</style>
+<body>
+<div>
+    <span id="heading">
+        Count Down Timer
+    </span><br>
+    <span id="js">
+        using vanila JavaScript
+    </span>
+</div>
+
+    <div class="container">
+
+        <div class="box">
+            <h1 id="day">07</h1>
+            <h4 >Days</h4>
+        </div>
+        <p>:</p>
+        <div class="box">
+            <h1 id="hour">07</h1>
+            <h4>Hours</h4>
+        </div>
+        <p>:</p>
+        <div class="box">
+            <h1 id="min">07</h1>
+            <h4>Minutes</h4>
+        </div>
+        <p>:</p>
+        <div class="box">
+            <h1 id="sec">07</h1>
+            <h4>Seconds</h4>
+        </div>
+    </div>
+
+    <script src="countDown.js"></script>
+</body>
+</html>
